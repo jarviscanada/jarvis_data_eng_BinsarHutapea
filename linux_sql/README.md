@@ -1,11 +1,11 @@
 # Linux Cluster Monitoring Agent
 This project is under development. Since this project follows the GitFlow, the final work will be merged to the master branch after Team Code Team.
 
-#Introduction
+# Introduction
 
-#Quick Start
+# Quick Start
 
-#Implementation
+# Implementation
 
-##Architecture
-![](/assets/linux-sql-architecture.jpg)
+## Architecture
+![Architecture Diagram](./assets/linux-sql-architecture.jpg)
