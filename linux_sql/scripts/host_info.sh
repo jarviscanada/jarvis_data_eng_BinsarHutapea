@@ -29,6 +29,7 @@ total_mem=$(echo "$free_out" | egrep "^Mem:" | awk '{print $2}' | xargs)
 #Current time in YYYY-mm-dd HH:MM:SS format
 timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
+#PSQL query for inserting data into info table
 insert_stmt="INSERT INTO host_info(hostname, cpu_number, cpu_architecture, cpu_model, cpu_mhz, L2_cache, total_mem, timestamp) VALUES ('$hostname', '$cpu_number', '$cpu_architecture', '$cpu_model', '$cpu_mhz', '$L2_cache', '$total_mem', '$timestamp')"
 
 #Set up environment variable for psql cmd
