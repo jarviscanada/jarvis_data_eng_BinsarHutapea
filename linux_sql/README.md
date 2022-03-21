@@ -83,7 +83,7 @@ The bash scripts and SQL scripts were tested by executing them one at a time.
 - The last script to be tested was queries.sql, and it was verified by checking if the queries returned the correct information.
 
 # Deployment
-The MVP folder containing the necessary script files is hosted on a Github repository. It needs to be cloned/downloaded to each of the node on the cluster. One node hosts the database via Docker. As for the scheduler for retrieving hardware usage, crontab configuration needs to be performed on each node.
+The MVP folder containing the necessary script files is hosted on a Github repository. It needs to be cloned/downloaded to each of the nodes on the cluster. One node hosts the database via Docker. As for the scheduler for retrieving hardware usage, crontab configuration needs to be performed on each node.
 
 # Improvements
 It would be nice to improve or add the following:
