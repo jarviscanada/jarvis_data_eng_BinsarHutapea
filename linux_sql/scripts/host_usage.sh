@@ -7,6 +7,13 @@ db_name=$3
 psql_user=$4
 psql_password=$5
 
+#Check CLI params
+if [ $# -ne 5 ]; then
+  echo 'Illegal command'
+  echo 'Format should be psql_host psql port db_name psql_user psql_password'
+  exit 1
+fi
+
 #Save machine stats in MB and hostname of current machine to variables
 vmstat_mb=$(vmstat --unit M)
 hostname=$(hostname -f)
