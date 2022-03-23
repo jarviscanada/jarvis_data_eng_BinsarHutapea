@@ -44,4 +44,5 @@ FROM host_usage
 GROUP BY
          host_id,
          rounded_timestamp
+HAVING COUNT(host_id) < 3
 ORDER BY host_id;
