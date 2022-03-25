@@ -1,0 +1,121 @@
+{
+  "education": [
+    {
+      "awards_achievements": null,
+      "degree": "Master of Applied Computer Science",
+      "department": "Electrical and Computer Engineering",
+      "duration": "2019-2021",
+      "school_name": "Concordia University"
+    },
+    {
+      "awards_achievements": null,
+      "degree": "Bachelor of Computer Science",
+      "department": "Computer Science and Electronics",
+      "duration": "2011-2015",
+      "school_name": "Gadjah Mada University"
+    }
+  ],
+  "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea",
+  "highlighted_projects": [
+    {
+      "description": "Investigated the use of Blockchain technology outside the crypto-currency realm to build Dapps, which is an application made of a smart contract and a user interface and built on a decentralized network that combines a smart contract and a frontend user interface. Built a decentralised secure online marketplace using Ethereum and other Blockchain technologies for trading properties items. Utilized Solidity for smart contract programming tasks and React framework for frond-end programming tasks. Performed integration of Dapps with IPFS to overcome the file size limitations on Blockchain and expand its user base.",
+      "git_url": null,
+      "name": "SmartProp - Blockchain-based Smart Property Ownership Management System on IPFS"
+    }
+  ],
+  "jarvis_projects": [
+    {
+      "description": "Implemented tools for gathering information regarding hardware information and usage on machines on a cluster. The information is retrieved using Bash scripts that were written in this project and then stored on a PostgreSQL database. retrieving and storing hardware information and usage of machines on a cluster. Crontab is utilized for automating script execution periodically.",
+      "git_url": "/linux_sql",
+      "name": "Cluster Monitor"
+    },
+    {
+      "description": [
+        "Twitter App: Not started.",
+        "JDBC App: In progress.",
+        "Grep App: In progress."
+      ],
+      "git_url": "/core_java",
+      "name": "Core Java Apps"
+    },
+    {
+      "description": "",
+      "git_url": "/springboot",
+      "name": "Springboot App"
+    },
+    {
+      "description": "",
+      "git_url": "/python_data_anlytics",
+      "name": "Python Data Analytics"
+    },
+    {
+      "description": "",
+      "git_url": "/hadoop",
+      "name": "Hadoop"
+    },
+    {
+      "description": "",
+      "git_url": "/spark",
+      "name": "Spark"
+    },
+    {
+      "description": "",
+      "git_url": "/cloud_devops",
+      "name": "Cloud/DevOps"
+    }
+  ],
+  "name": "Binsar Hutapea",
+  "others": [
+    {
+      "bullets": [
+        "Drawing"
+      ],
+      "title": "Activities/Hobbies"
+    }
+  ],
+  "professional_experience": [
+    {
+      "company": "Jarvis",
+      "description": "Develop tools and applications on a remote PC hosted on Google Cloud Platform and running on CentOS 7. Perform scripting tasks using Bash. Write queries for managing data using PostgreSQL. Manage database runtime using Docker. Handle programming tasks with Java.",
+      "duration": "2022-present",
+      "title": "Software Developer"
+    },
+    {
+      "company": "PT Multipolar Technology Tbk",
+      "description": "Performed web application programming and database tasks using Java, HTML, CSS, Typescript, JavaScript, Spring, Hibernate, Angular, MySQL, and Oracle. Handled receipts and reports generation using JasperReports. Wrote Selenium scripts for automated testing. Handled bug fixing. Handled live production support role. Tested web applications using manual method and automated method with Selenium. Handled application deployment and maintenance tasks using IBM Websphere Application Server and Apache HTTP Server. Wrote user manuals.",
+      "duration": "2016-2019",
+      "title": "Application Developer"
+    }
+  ],
+  "skills": {
+    "competent": [
+      "Python",
+      "Software testing",
+      "Debugging",
+      "Springboot",
+      "Angular",
+      "Docker"
+    ],
+    "familiar": [
+      "NoSQL",
+      "Selenium",
+      "Apache HTTP Server",
+      "ReactJS",
+      "Maven",
+      "Gradle",
+      "Google Cloud Platform"
+    ],
+    "proficient": [
+      "Java",
+      "Linux/Bash",
+      "RDBMS/SQL",
+      "Agile/Scrum",
+      "Git",
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ]
+  },
+  "summary": "I am very enthusiastic about venturing into the world of Software Development to seek the challenges of utilizing it in the industry to solve real-life problems. I have prior industry experience as an application developer, where I was deeply involved in developing, testing, and deploying multiple web-based applications for multiple corporations, where I used Java and Typescript within Spring and Angular frameworks for performing programming tasks, MySQL and Oracle for interacting with the databases, and Selenium for performing automated testing."
+}
