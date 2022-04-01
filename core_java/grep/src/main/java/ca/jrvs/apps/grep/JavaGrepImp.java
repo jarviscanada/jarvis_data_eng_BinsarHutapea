@@ -3,9 +3,8 @@ package ca.jrvs.apps.grep;
 import com.sun.org.slf4j.internal.Logger;
 import com.sun.org.slf4j.internal.LoggerFactory;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
+import java.io.*;
+import java.util.*;
 
 public class JavaGrepImp implements JavaGrep{
 
@@ -27,27 +26,81 @@ public class JavaGrepImp implements JavaGrep{
 
     @Override
     public void process() throws IOException {
+        List<String> matchedLines = new ArrayList<>();
 
+        for (File file : listFiles(this.getRootPath())){
+            for (String line : readLines(file)){
+                if (containsPattern(line)){
+                    matchedLines.add(line);
+                }
+            }
+        }
+        writeToFile(matchedLines);
     }
 
     @Override
     public List<File> listFiles(String rootDir) {
-        return null;
+        File directory = new File(rootDir);
+        List<File> fileList = new ArrayList<>();
+
+        Queue<File> queue = new LinkedList<>();
+        queue.add(directory);
+
+        while(!queue.isEmpty()){
+
+            File currentFile = queue.poll();
+            if (currentFile.isDirectory()){
+                queue.addAll(Arrays.asList(currentFile.listFiles()));
+            }
+            else{
+                fileList.add(currentFile);
+            }
+        }
+
+        return fileList;
     }
 
     @Override
     public List<String> readLines(File inputFile) {
-        return null;
+        List<String> lineList = new ArrayList<>();
+
+        try{
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(inputFile));
+
+            String line = bufferedReader.readLine();
+
+            while(line != null){
+                lineList.add(line);
+                line = bufferedReader.readLine();
+            }
+
+        }catch (FileNotFoundException ex){
+            this.logger.error("File not found", ex);
+        }catch (IOException ex){
+            this.logger.error("IO exception", ex);
+        }
+        return lineList;
     }
 
     @Override
     public boolean containsPattern(String line) {
+        if (line.matches(this.getRegex())){
+            return true;
+        }
         return false;
     }
 
     @Override
     public void writeToFile(List<String> lines) throws IOException {
+        FileOutputStream fileOutputStream = new FileOutputStream(this.getOutFile());
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+        BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 
+        for(String line : lines){
+            bufferedWriter.write(line);
+            bufferedWriter.newLine();
+        }
+        bufferedWriter.flush();
     }
 
     @Override
