@@ -58,4 +58,16 @@ public class OrderLine {
     public void setProductPrice(BigDecimal productPrice) {
         this.productPrice = productPrice;
     }
+
+    @Override
+    public String toString() {
+        return "OrderLine{" +
+                "quantity=" + quantity +
+                ", productCode='" + productCode + '\'' +
+                ", productName='" + productName + '\'' +
+                ", productSize=" + productSize +
+                ", productVariety='" + productVariety + '\'' +
+                ", productPrice=" + productPrice +
+                '}';
+    }
 }
