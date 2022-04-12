@@ -28,6 +28,13 @@ public class CustomerDAO extends DataAccessObject<Customer> {
     @Override
     public Customer findById(long id) {
         Customer customer = new Customer();
+
+        try{
+            this.connection.setAutoCommit(false);
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+
         try(PreparedStatement preparedStatement = this.connection.prepareStatement(GET_BY_ID)){
             preparedStatement.setLong(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -75,9 +82,18 @@ public class CustomerDAO extends DataAccessObject<Customer> {
 
             statement.execute();
 
+            this.connection.commit();
+
             customer = this.findById(dto.getId());
 
         } catch (SQLException e) {
+
+            try{
+                this.connection.rollback();
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
+
             throw new RuntimeException(e);
         }
 
