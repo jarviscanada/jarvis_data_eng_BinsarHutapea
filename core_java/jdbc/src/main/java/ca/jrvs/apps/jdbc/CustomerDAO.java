@@ -68,19 +68,19 @@ public class CustomerDAO extends DataAccessObject<Customer> {
 
         Customer customer = null;
 
-        try(PreparedStatement statement = this.connection.prepareStatement(UPDATE);){
+        try(PreparedStatement preparedStatement = this.connection.prepareStatement(UPDATE);){
 
-            statement.setString(1, dto.getFirstName());
-            statement.setString(2, dto.getLastName());
-            statement.setString(3, dto.getEmail());
-            statement.setString(4, dto.getPhone());
-            statement.setString(5, dto.getAddress());
-            statement.setString(6, dto.getCity());
-            statement.setString(7, dto.getState());
-            statement.setString(8, dto.getZipCode());
-            statement.setLong(9, dto.getId());
+            preparedStatement.setString(1, dto.getFirstName());
+            preparedStatement.setString(2, dto.getLastName());
+            preparedStatement.setString(3, dto.getEmail());
+            preparedStatement.setString(4, dto.getPhone());
+            preparedStatement.setString(5, dto.getAddress());
+            preparedStatement.setString(6, dto.getCity());
+            preparedStatement.setString(7, dto.getState());
+            preparedStatement.setString(8, dto.getZipCode());
+            preparedStatement.setLong(9, dto.getId());
 
-            statement.execute();
+            preparedStatement.execute();
 
             this.connection.commit();
 
@@ -103,18 +103,18 @@ public class CustomerDAO extends DataAccessObject<Customer> {
     @Override
     public Customer create(Customer dto) {
 
-        try(PreparedStatement statement = this.connection.prepareStatement(INSERT);){
+        try(PreparedStatement preparedStatement = this.connection.prepareStatement(INSERT);){
 
-            statement.setString(1, dto.getFirstName());
-            statement.setString(2, dto.getLastName());
-            statement.setString(3, dto.getEmail());
-            statement.setString(4, dto.getPhone());
-            statement.setString(5, dto.getAddress());
-            statement.setString(6, dto.getCity());
-            statement.setString(7, dto.getState());
-            statement.setString(8, dto.getZipCode());
+            preparedStatement.setString(1, dto.getFirstName());
+            preparedStatement.setString(2, dto.getLastName());
+            preparedStatement.setString(3, dto.getEmail());
+            preparedStatement.setString(4, dto.getPhone());
+            preparedStatement.setString(5, dto.getAddress());
+            preparedStatement.setString(6, dto.getCity());
+            preparedStatement.setString(7, dto.getState());
+            preparedStatement.setString(8, dto.getZipCode());
 
-            statement.execute();
+            preparedStatement.execute();
 
             int id = this.getLastVal(CUSTOMER_SEQUENCE);
             return this.findById(id);

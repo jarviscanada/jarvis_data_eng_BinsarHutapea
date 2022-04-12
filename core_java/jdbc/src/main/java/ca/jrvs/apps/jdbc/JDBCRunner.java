@@ -10,8 +10,6 @@ import java.sql.Statement;
 
 public class JDBCRunner {
 
-   static final Logger logger = LoggerFactory.getLogger(JDBCRunner.class);
-
     /**
      * Main class to establish database connection
      * @param args [host] [username] [password] [databaseName] [firstName] [lastName] [email] [address] [city] [state] [phone] [zipcode] [newEmail] [orderId]
@@ -65,7 +63,7 @@ public class JDBCRunner {
             Order order = orderDAO.findById(orderId);
             System.out.println(order);
          } catch (SQLException e) {
-            logger.error("Encountered SQL Exception ", e);
+             throw new RuntimeException(e);
          }
    }
 }
