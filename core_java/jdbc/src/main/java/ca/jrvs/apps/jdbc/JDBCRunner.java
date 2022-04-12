@@ -14,12 +14,12 @@ public class JDBCRunner {
 
     /**
      * Main class to establish database connection
-     * @param args [host] [username] [password] [databaseName] [firstName] [lastName] [email] [address] [city] [state] [phone] [zipcode] [newEmail]
+     * @param args [host] [username] [password] [databaseName] [firstName] [lastName] [email] [address] [city] [state] [phone] [zipcode] [newEmail] [orderId]
      */
    public static void main(String[] args){
 
-         if (args.length != 13){
-            throw new IllegalArgumentException("USAGE: JDBCRunner host username password databaseName firstName lastName email address city state phone zipcode newEmail");
+         if (args.length != 14){
+            throw new IllegalArgumentException("USAGE: JDBCRunner host username password databaseName firstName lastName email address city state phone zipcode newEmail orderId");
          }
 
          String host = args[0];
@@ -35,6 +35,7 @@ public class JDBCRunner {
          String phone = args[10];
          String zipCode = args[11];
          String newEmail = args[12];
+         long orderId = Long.parseLong(args[13]);
 
          DatabaseConnectionManager databaseConnectionManager = new DatabaseConnectionManager(host, username, password, databaseName);
 
@@ -59,6 +60,10 @@ public class JDBCRunner {
             dbCustomer = customerDAO.update(dbCustomer);
             System.out.println(dbCustomer);
             customerDAO.delete(dbCustomer.getId());
+
+            OrderDAO orderDAO = new OrderDAO(connection);
+            Order order = orderDAO.findById(orderId);
+            System.out.println(order);
          } catch (SQLException e) {
             logger.error("Encountered SQL Exception ", e);
          }
