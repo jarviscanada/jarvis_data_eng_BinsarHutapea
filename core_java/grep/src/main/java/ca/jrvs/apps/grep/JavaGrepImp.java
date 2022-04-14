@@ -5,6 +5,8 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Stream;
 
@@ -29,7 +31,7 @@ public class JavaGrepImp implements JavaGrep{
     @Override
     public void process() throws IOException {
 
-        listFiles(this.getRootPath()).flatMap(file -> {
+        listFiles(this.getRootPath()).stream().flatMap(file -> {
             try {
                 return readLines(file);
             } catch (IOException e) {
@@ -42,25 +44,20 @@ public class JavaGrepImp implements JavaGrep{
     }
 
     @Override
-    public Stream<File> listFiles(String rootDir) {
-        File directory = new File(rootDir);
-        List<File> fileList = new ArrayList<>();
+    public List<File> listFiles(String rootDir) {
+        List<File> filesList = new ArrayList<>();
 
-        Queue<File> queue = new LinkedList<>();
-        queue.add(directory);
-
-        while(!queue.isEmpty()){
-
-            File currentFile = queue.poll();
-            if (currentFile.isDirectory()){
-                queue.addAll(Arrays.asList(currentFile.listFiles()));
-            }
-            else{
-                fileList.add(currentFile);
-            }
+        try(Stream<Path> pathStream = Files.walk(Paths.get(rootDir), Integer.MAX_VALUE)){
+            pathStream.forEach(path -> {
+                if (path.toFile().isFile()){
+                    filesList.add(path.toFile());
+                }
+            });
+        } catch (IOException e) {
+            throw new RuntimeException();
         }
 
-        return fileList.stream();
+        return filesList;
     }
 
     @Override

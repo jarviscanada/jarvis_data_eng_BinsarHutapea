@@ -2,6 +2,7 @@ package ca.jrvs.apps.grep;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.stream.Stream;
 
 public interface JavaGrep {
@@ -17,7 +18,7 @@ public interface JavaGrep {
      * @param rootDir input directory
      * @return files under the rootDir
      */
-    Stream<File> listFiles(String rootDir);
+    List<File> listFiles(String rootDir);
 
     /**
      * Read a file and return all the lines
