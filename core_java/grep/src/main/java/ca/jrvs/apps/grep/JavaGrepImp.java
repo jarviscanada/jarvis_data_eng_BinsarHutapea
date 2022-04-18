@@ -54,7 +54,7 @@ public class JavaGrepImp implements JavaGrep{
                 }
             });
         } catch (IOException e) {
-            throw new RuntimeException();
+            throw new RuntimeException(e);
         }
 
         return filesList;
