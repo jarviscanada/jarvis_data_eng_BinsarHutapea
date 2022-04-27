@@ -14,7 +14,7 @@ public class ValidParentheses {
      * @param string
      * @return a boolean value
      */
-    public boolean isValid(String string){
+    public boolean validateParentheses(String string){
         HashMap<Character, Character> map = new HashMap<>();
         map.put('(', ')');
         map.put('{', '}');

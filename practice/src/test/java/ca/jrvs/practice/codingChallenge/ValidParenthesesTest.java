@@ -18,9 +18,9 @@ public class ValidParenthesesTest {
         String caseTwoString = "({[]})";
         String caseThreeString = "({[]))";
 
-        assertTrue(validParentheses.isValid(caseOneString));
-        assertTrue(validParentheses.isValid(caseTwoString));
-        assertFalse(validParentheses.isValid(caseThreeString));
+        assertTrue(validParentheses.validateParentheses(caseOneString));
+        assertTrue(validParentheses.validateParentheses(caseTwoString));
+        assertFalse(validParentheses.validateParentheses(caseThreeString));
 
 
 
