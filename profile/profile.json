@@ -25,43 +25,17 @@
   ],
   "jarvis_projects": [
     {
-      "description": "Implemented tools for gathering information regarding hardware information and usage on machines on a cluster. The information is retrieved using Bash scripts that were written in this project and then stored on a PostgreSQL database. retrieving and storing hardware information and usage of machines on a cluster. Crontab is utilized for automating script execution periodically.",
+      "description": "Implemented tools for gathering information regarding hardware information and usage on machines on a cluster. The information is retrieved using Bash scripts written in this project and then stored on a PostgreSQL database. Crontab is utilized for automating script execution periodically.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
     },
     {
       "description": [
-        "Twitter App: Not started.",
-        "JDBC App: In progress.",
-        "Grep App: In progress."
+        "JDBC App: Built an application to retrieve, process, and display data from a database. PostgreSQL is used as the Relational Database Management System (RDBMS) in this application. Additionally, Docker is utilized to manage a PostgreSQL instance. Also, Maven is utilized to manage this project and its dependencies.",
+        "Grep App: Implemented a tool with Java 8 for retrieving strings of text from files based on user-specified regular expressions. The program searches every existing file and subdirectory and writes any matched strings to an output file. In addition, Maven is utilized to manage this project and its dependencies. Also, this program is Dockerized and shared on Docker Hub."
       ],
       "git_url": "/core_java",
       "name": "Core Java Apps"
-    },
-    {
-      "description": "",
-      "git_url": "/springboot",
-      "name": "Springboot App"
-    },
-    {
-      "description": "",
-      "git_url": "/python_data_anlytics",
-      "name": "Python Data Analytics"
-    },
-    {
-      "description": "",
-      "git_url": "/hadoop",
-      "name": "Hadoop"
-    },
-    {
-      "description": "",
-      "git_url": "/spark",
-      "name": "Spark"
-    },
-    {
-      "description": "",
-      "git_url": "/cloud_devops",
-      "name": "Cloud/DevOps"
     }
   ],
   "name": "Binsar Hutapea",

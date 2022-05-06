@@ -15,23 +15,12 @@ I am very enthusiastic about venturing into the world of Software Development to
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/linux_sql)]: Implemented tools for gathering information regarding hardware information and usage on machines on a cluster. The information is retrieved using Bash scripts that were written in this project and then stored on a PostgreSQL database. retrieving and storing hardware information and usage of machines on a cluster. Crontab is utilized for automating script execution periodically.
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/linux_sql)]: Implemented tools for gathering information regarding hardware information and usage on machines on a cluster. The information is retrieved using Bash scripts written in this project and then stored on a PostgreSQL database. Crontab is utilized for automating script execution periodically.
 
 **Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/core_java)]:
       
-  - Twitter App: Not started.
-  - JDBC App: In progress.
-  - Grep App: In progress.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_BinsarHutapea/tree/master/cloud_devops)]: Not Started
+  - JDBC App: Built an application to retrieve, process, and display data from a database. PostgreSQL is used as the Relational Database Management System (RDBMS) in this application. Additionally, Docker is utilized to manage a PostgreSQL instance. Also, Maven is utilized to manage this project and its dependencies.
+  - Grep App: Implemented a tool with Java 8 for retrieving strings of text from files based on user-specified regular expressions. The program searches every existing file and subdirectory and writes any matched strings to an output file. In addition, Maven is utilized to manage this project and its dependencies. Also, this program is Dockerized and shared on Docker Hub.
 
 
 ## Highlighted Projects
