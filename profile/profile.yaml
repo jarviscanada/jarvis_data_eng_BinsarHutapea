@@ -5,7 +5,7 @@ github_repo_root_url: https://github.com/jarviscanada/jarvis_data_eng_BinsarHuta
 
 # Introduce yourself, your academic and professional background.
 # What excites you about the software industry and your passion. At least 80 words
-summary: "I am very enthusiastic about venturing into the world of Software Development to seek the challenges of utilizing it in the industry to solve real-life problems. I have prior industry experience as an application developer, where I was deeply involved in developing, testing, and deploying multiple web-based applications for multiple corporations, where I used Java and Typescript within Spring and Angular frameworks for performing programming tasks, MySQL and Oracle for interacting with the databases, and Selenium for performing automated testing."
+summary: "I am very enthusiastic about venturing into the world of Software Development to seek the challenges of utilizing it in the industry to solve real-life problems. I have prior industry experience as an application developer, where I was deeply involved in developing, testing, and deploying multiple web-based applications for multiple corporations, where I used Java and Typescript within Spring and Angular frameworks for performing programming tasks, MySQL and Oracle for interacting with the databases, and Selenium for performing automated testing. I am adapting to an Agile framework, specifically Scrum methodology. I am also developing my skills in Cloud and DevOps."
 # Group your skills by level.
 # Your skills can be anything software related (e.g. language, frameworks, methodologies, software, etc.).
 skills:
@@ -94,4 +94,7 @@ others:
     #category
   - title: "Activities/Hobbies"
     bullets:
-      - "Drawing"
+      - "Art Activity: Drawing characters, objects, and landscapes"
+      - "Sports: Swimming, Badminton, Table Tennis"
+      - "Video Gaming: Ace Combat 7, Tales series, Halo series, Earth Defense Force 5, Mega Man X series, Metroidvania games"
+      - "Other Activities: Cooking and learning new food recipes"

@@ -1,6 +1,6 @@
 # Binsar Hutapea . Jarvis Consulting
 
-I am very enthusiastic about venturing into the world of Software Development to seek the challenges of utilizing it in the industry to solve real-life problems. I have prior industry experience as an application developer, where I was deeply involved in developing, testing, and deploying multiple web-based applications for multiple corporations, where I used Java and Typescript within Spring and Angular frameworks for performing programming tasks, MySQL and Oracle for interacting with the databases, and Selenium for performing automated testing.
+I am very enthusiastic about venturing into the world of Software Development to seek the challenges of utilizing it in the industry to solve real-life problems. I have prior industry experience as an application developer, where I was deeply involved in developing, testing, and deploying multiple web-based applications for multiple corporations, where I used Java and Typescript within Spring and Angular frameworks for performing programming tasks, MySQL and Oracle for interacting with the databases, and Selenium for performing automated testing. I am adapting to an Agile framework, specifically Scrum methodology. I am also developing my skills in Cloud and DevOps.
 
 ## Skills
 
@@ -41,4 +41,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_BinsarHuta
 
 
 ## Miscellaneous
-- Drawing
+- Art Activity: Drawing characters, objects, and landscapes
+- Sports: Swimming, Badminton, Table Tennis
+- Video Gaming: Ace Combat 7, Tales series, Halo series, Earth Defense Force 5, Mega Man X series, Metroidvania games
+- Other Activities: Cooking and learning new food recipes
