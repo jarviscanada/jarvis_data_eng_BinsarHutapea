@@ -6,6 +6,7 @@ import ca.jrvs.apps.twitter.model.Tweet;
 import oauth.signpost.exception.OAuthCommunicationException;
 import oauth.signpost.exception.OAuthExpectationFailedException;
 import oauth.signpost.exception.OAuthMessageSignerException;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
 import java.util.HashSet;
@@ -15,6 +16,7 @@ public class TwitterService implements Service{
 
     private TwitterDao dao;
 
+    @Autowired
     public TwitterService(TwitterDao dao){
         this.dao = dao;
     }
