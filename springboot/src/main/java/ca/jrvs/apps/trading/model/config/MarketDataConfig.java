@@ -1,5 +1,7 @@
 package ca.jrvs.apps.trading.model.config;
 
+import org.springframework.context.annotation.Configuration;
+
 public class MarketDataConfig {
 
     private String host;
