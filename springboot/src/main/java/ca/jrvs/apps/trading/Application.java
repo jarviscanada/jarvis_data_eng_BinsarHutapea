@@ -13,7 +13,7 @@ import org.springframework.boot.CommandLineRunner;
 
 @SpringBootApplication(exclude = {JdbcTemplateAutoConfiguration.class,
         DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-class Application implements CommandLineRunner {
+public class Application implements CommandLineRunner {
 
   private Logger logger = LoggerFactory.getLogger(Application.class);
 
